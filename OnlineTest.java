@@ -167,7 +167,7 @@ class OnlineTest extends JFrame implements ActionListener
 			return(jb[2].isSelected());
 		if(current==6)
 			return(jb[1].isSelected());
-		if(current==7=====)
+		if(current==7)
 			return(jb[3].isSelected());
 		if(current==8)
 			return(jb[1].isSelected());
@@ -184,92 +184,4 @@ class OnlineTest extends JFrame implements ActionListener
 }
 /*
 
-Certainly! I'll break down the provided code and explain each line for you:
-
-
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-
-class OnlineTest extends JFrame implements ActionListener
-{
-    JLabel l;
-    JRadioButton jb[] = new JRadioButton[5];
-    JButton b1, b2;
-    ButtonGroup bg;
-    int count = 0, current = 0, x = 1, y = 1, now = 0;
-    int m[] = new int[10];
-
-    OnlineTest(String s)
-    {
-        super(s);
-        l = new JLabel();
-        add(l);
-        bg = new ButtonGroup();
-        for (int i = 0; i < 5; i++)
-        {
-            jb[i] = new JRadioButton();
-            add(jb[i]);
-            bg.add(jb[i]);
-        }
-        b1 = new JButton("Next");
-        b2 = new JButton("Bookmark");
-        b1.addActionListener(this);
-        b2.addActionListener(this);
-        add(b1);
-        add(b2);
-        // ... (Continues below)
-    }
-    
-    public void actionPerformed(ActionEvent e)
-    {
-        // ... (Continues below)
-    }
-
-    void set()
-    {
-        // ... (Continues below)
-    }
-    
-    boolean check()
-    {
-        // ... (Continues below)
-    }
-
-    public static void main(String s[])
-    {
-        new OnlineTest("Online Test Of Java");
-    }
-}
-Let's break down the code in sections:
-
-Imports and Class Declaration:
-
-The code imports necessary classes from the java.awt and javax.swing packages.
-It declares a class named OnlineTest that extends JFrame and implements the ActionListener interface. This class represents the main logic of the online test application.
-Instance Variables and Constructor:
-
-JLabel l;: Declares a label for displaying the question.
-JRadioButton jb[] = new JRadioButton[5];: Declares an array of radio buttons for answer choices.
-JButton b1, b2;: Declares buttons for "Next" and "Bookmark."
-ButtonGroup bg;: Declares a button group to manage radio button selection.
-int count, current, x, y, now;: Declares various counters and indices.
-int m[] = new int[10];: Declares an array to store bookmarked questions.
-The constructor OnlineTest(String s) initializes the GUI components, sets up the layout, and initializes variables. It also adds radio buttons, buttons, and event listeners.
-Action Event Handling:
-
-The actionPerformed(ActionEvent e) method handles button clicks.
-It checks if the "Next" button is clicked, updates the question, and checks if the quiz is completed.
-It handles the "Bookmark" button to add bookmarked questions.
-It handles bookmarked question buttons.
-It handles the "Result" button to display the quiz result.
-Question Setting:
-
-The set() method sets up questions and answer choices based on the current question index.
-Answer Checking:
-
-The check() method checks the selected answer choice for correctness based on the current question index.
-Main Method:
-
-The main(String s[]) method creates an instance of the OnlineTest class, initializing the application.
  */
